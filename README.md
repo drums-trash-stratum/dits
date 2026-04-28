@@ -25,6 +25,8 @@ DITS/
     └── config_swung_breakbeat.json
 ```
 
+For the CRNN model implementation, we adapted the architecture and code from `adtof_pytorch/`[https://github.com/xavriley/ADTOF-pytorch] is a Pytorch-based re-implementation of the ADTOF[https://github.com/mzehren/adtof].
+
 ---
 
 ## Installation
@@ -209,6 +211,4 @@ python transcribe.py out/house.wav \
 
 - This release is anonymized for double-blind review and contains no author or
   institution names.
-- `adtof_pytorch/`[https://github.com/xavriley/ADTOF-pytorch] is a re-implementation of the ADTOF Frame-RNN architecture by this project
-  with a `madmom`-free audio frontend (only `librosa` + `soundfile`).
 - The drum machine is a 3-class (Bass Drum, Snare Drum and Hi-Hats) 16-step monophonic sequencer with configurable a global tempo, per-instrument swing percentages.
