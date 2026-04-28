@@ -210,7 +210,6 @@ python transcribe.py out/house.wav \
 
 - This release is anonymized for double-blind review and contains no author or
   institution names.
-- `adtof_pytorch/` is a re-implementation of the ADTOF Frame-RNN architecture
+- `adtof_pytorch/`[https://github.com/xavriley/ADTOF-pytorch] is a re-implementation of the ADTOF Frame-RNN architecture by this project
   with a `madmom`-free audio frontend (only `librosa` + `soundfile`).
-- The drum machine is a stripped-down monophonic sequencer matching the
-  step-based grid + swing scheme used in our experiments.
+- The drum machine is a 3-class (Bass Drum, Snare Drum and Hi-Hats) 16-step monophonic sequencer with configurable a global tempo, per-instrument swing percentages.
