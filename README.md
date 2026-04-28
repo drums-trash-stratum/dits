@@ -214,3 +214,4 @@ python transcribe.py out/house.wav \
 
 
 ### Parameters for audio effects chain used in generating DITS drum loops
+shown in ```drum_machine/audio_processing.py```
