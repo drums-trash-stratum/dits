@@ -36,14 +36,13 @@ from adtof_pytorch.post_processing import NotePeakPickingProcessor
 TRACK_NAMES = ["kick", "snare", "hihat"]
 DEFAULT_FPS = 100
 
-# Peak-picking parameters tuned for the 3-channel fine-tuned model. Channels
+# Peak-picking parameters tuned for the 3-channel ADT model. Channels
 # are ordered [kick, snare, hihat] in the 3-class output head.
 DEFAULT_PP_PARAMS_3CH: Sequence[Dict[str, float]] = (
-    dict(threshold=0.50, post_max=0.01, pre_avg=0.10, pre_max=0.04, post_avg=0.01, combine=0.02),
-    dict(threshold=0.50, post_max=0.01, pre_avg=0.16, pre_max=0.04, post_avg=0.01, combine=0.02),
-    dict(threshold=0.50, post_max=0.04, pre_avg=0.12, pre_max=0.01, post_avg=0.01, combine=0.02),
+    dict(threshold=0.65, post_max=0.05, pre_avg=0.14, pre_max=0.03, post_avg=0.01, combine=0.02),
+    dict(threshold=0.75, post_max=0.07, pre_avg=0.16, pre_max=0.04, post_avg=0.01, combine=0.02),
+    dict(threshold=0.65, post_max=0.04, pre_avg=0.10, pre_max=0.03, post_avg=0.01, combine=0.02),
 )
-
 
 def load_3ch_checkpoint(
     checkpoint_path: str, device: str = "cpu"
