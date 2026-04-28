@@ -212,7 +212,7 @@ python transcribe.py out/house.wav \
 
 ### Exploratory pilot study of evaluating ADTOF on 10 techno / house loops (using F1 score) from [FSL-30](https://shorturl.at/cuayR)
 
-Global | BD | SD | HH 
+Global F1 | Bass Drum F1 | Snare Drum F1 | HiHats F1
  --- | --- | --- |--- 
 0.60 | 0.89 | 0.18 | 0.47 | 
 
