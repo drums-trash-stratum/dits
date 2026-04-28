@@ -3,8 +3,7 @@
 Anonymous code release accompanying the ISMIR submission. Contains two
 self-contained tools:
 
-1. **`transcribe.py`** — runs a 3-channel ADTOF Frame-RNN onset detector on a
-   drum audio file and returns kick / snare / hihat onset times.
+1. **`transcribe.py`** — runs a pre-trained CRNN model (trained on the DITS dataset, with model architecture similar with ADTOF[https://github.com/mzehren/adtof]) on a drum audio file and returns Bass Drum / Snare Drum / Hi-Hats onset times.
 2. **`render_loop.py`** — synthesizes a 16-step drum loop from configurable
    parameters (per-step velocities, tempo, swing, one-shot samples).
 
