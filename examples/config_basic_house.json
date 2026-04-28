@@ -1,0 +1,16 @@
+{
+    "kick_path":  "examples/one_shots/kick/kick.wav",
+    "snare_path": "examples/one_shots/snare/snare.wav",
+    "hihat_path": "examples/one_shots/hihat/hh.wav",
+    "tempo": 124,
+    "beat_type": "8th",
+    "kick_velo":  [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0],
+    "snare_velo": [0.0, 0.0, 0.0, 0.0, 0.9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.9, 0.0, 0.0, 0.0],
+    "hihat_velo": [0.0, 0.0, 0.6, 0.0, 0.0, 0.0, 0.6, 0.0, 0.0, 0.0, 0.6, 0.0, 0.0, 0.0, 0.6, 0.0],
+    "swing_kick":  0.50,
+    "swing_snare": 0.50,
+    "swing_hihat": 0.55,
+    "sample_rate": 16000,
+    "loop_length_secs": 4.0,
+    "one_shot_length_secs": 0.8
+}
