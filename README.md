@@ -210,8 +210,11 @@ python transcribe.py out/house.wav \
 ---
 ## Supplementary_Materials
 
-### Exploratory pilot study of evaluating ADTOF on 10 techno / house loops
+### Exploratory pilot study of evaluating ADTOF on 10 techno / house loops (using F1 score) from [FSL-30](https://shorturl.at/cuayR)
 
+Global | BD | SD | HH 
+ --- | --- | --- |--- 
+0.60 | 0.89 | 0.18 | 0.47 | 
 
 ### Parameters for audio effects chain used in generating DITS drum loops
 shown in ```drum_machine/audio_processing.py```
