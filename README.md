@@ -234,14 +234,15 @@ Gain - EQ (applied with a chance of 100%) - Compression (applied with a chance o
 Per-instrument per-effect parameter ranges (e.g. EQ high pass frequencies, gains, compressor thresholds and raios, etc.) can be found in [```drum_machine/audio_processing.py```](drum_machine/audio_processing.py)
 
 Master chain:
+
 Compression - Limiter
 
 Global parameters for compression:
 ```
 
 {
-            "threshold_db": -12, "ratio": 2,
-            "attack_ms": 30, "release_ms": 200,
+ "threshold_db": -12, "ratio": 2,
+ "attack_ms": 30, "release_ms": 200,
         }
 ```
 
