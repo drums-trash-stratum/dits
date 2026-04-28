@@ -217,4 +217,35 @@ Global F1 | Bass Drum F1 | Snare Drum F1 | HiHats F1
 0.60 | 0.89 | 0.18 | 0.47 | 
 
 ### Parameters for audio effects chain used in generating DITS drum loops
-shown in ```drum_machine/audio_processing.py```
+ (also shown in [```drum_machine/audio_processing.py```](drum_machine/audio_processing.py) )
+
+Bass Drum:
+
+Gain - EQ (applied with a chance of 33%) - Compression (applied with a chance of 70%) 
+
+Snare Drum:
+
+Gain - EQ (applied with a chance of 33%) - Compression (applied with a chance of 70%)  - Reverb (applied with a chance of 33%)
+
+HiHats:
+
+Gain - EQ (applied with a chance of 100%) - Compression (applied with a chance of 70%)  - Reverb (applied with a chance of 33%)
+
+Per-instrument per-effect parameter ranges (e.g. EQ high pass frequencies, gains, compressor thresholds and raios, etc.) can be found in [```drum_machine/audio_processing.py```](drum_machine/audio_processing.py)
+
+Master chain:
+Compression - Limiter
+
+Global parameters for compression:
+```
+
+{
+            "threshold_db": -12, "ratio": 2,
+            "attack_ms": 30, "release_ms": 200,
+        }
+```
+
+Global parameters for limiter:
+```
+{"threshold_db": -1.0}
+```
