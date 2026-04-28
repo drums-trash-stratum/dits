@@ -212,3 +212,11 @@ python transcribe.py out/house.wav \
 - This release is anonymized for double-blind review and contains no author or
   institution names.
 - The drum machine is a 3-class (Bass Drum, Snare Drum and Hi-Hats) 16-step monophonic sequencer with configurable a global tempo, per-instrument swing percentages.
+
+---
+## Supplementary materials
+
+### Exploratory pilot study of evaluating ADTOF on 10 techno / house loops
+
+
+### Parameters for audio effects chain used in generating DITS drum loops
