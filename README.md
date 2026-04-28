@@ -185,9 +185,9 @@ sum_track, tracks = render_loop(
     tempo=120.0,
     beat_type="8th",
     swing_hihat=0.55,
-    sample_rate=16000,
+    sample_rate=44100,
 )
-# sum_track: (1, 64000) torch.Tensor; tracks: (3, 1, 64000) torch.Tensor
+# sum_track: (1, 176400) torch.Tensor; tracks: (3, 1, 176400) torch.Tensor
 ```
 
 ---
