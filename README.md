@@ -1,10 +1,9 @@
 # DITS — Drum In the Trash Stratum
 
-Anonymous code release accompanying the ISMIR submission. Contains two
-self-contained tools:
+Anonymous code release accompanying the ISMIR submission. Contains two tools:
 
-1. **`transcribe.py`** — runs a pre-trained CRNN model (trained on the DITS dataset) on a drum audio file and returns Bass Drum / Snare Drum / Hi-Hats onset times.
-2. **`render_loop.py`** — synthesizes a 16-step drum loop from configurable
+1. **`transcribe.py`** — runs a pre-trained CRNN model (trained on the DITS dataset) on a drum audio file and returns Bass Drum (BD) / Snare Drum (SD) / Hi-Hats (HH) onset times.
+2. **`render_loop.py`** — synthesizes a 16-step drum loop including Bass Drum, Snare Drum and Hihats, from configurable
    parameters (per-step velocities, tempo, swing, one-shot samples).
 
 Both scripts share no global state with each other. You can run either
@@ -15,13 +14,13 @@ DITS/
 ├── README.md
 ├── requirements.txt
 ├── transcribe.py              # onset detection
-├── render_loop.py             # drum-loop synthesizer
-├── adtof_pytorch/             # PyTorch port of the ADTOF Frame-RNN
+├── render_loop.py             # drum-loop synthesis
+├── adtof_pytorch/             # ADT model scripts
 ├── drum_machine/              # 16-step sequencer + monophonic renderer
-├── checkpoints/               # put your fine-tuned 3-ch ADTOF .ckpt here
+├── checkpoints/               # ADT model checkpoints
 └── examples/
-    ├── one_shots/             # acoustic kick / snare / hihat used in demos
-    ├── config_basic_house.json
+    ├── one_shots/             # kick (BD) / snare (SD) / hihat (HH) one-shots used in demos
+    ├── config_basic_house.json # Drum machine rhythmparameter examples
     └── config_swung_breakbeat.json
 ```
 
@@ -72,7 +71,7 @@ from transcribe import transcribe
 
 onsets = transcribe(
     "path/to/drum_audio.wav",
-    checkpoint_path="checkpoints/adtof_3ch.ckpt",
+    checkpoint_path="checkpoints/adt_model.ckpt",
     device="cuda",            # or "cpu"
     thresholds=(0.5, 0.5, 0.5),  # per-channel kick/snare/hihat
 )
@@ -93,7 +92,7 @@ are kept only as a reference for the original model architecture.
 
 ---
 
-## 2. Drum-loop synthesis (`render_loop.py`)
+## 2. Drum loop synthesis (`render_loop.py`)
 
 Renders a 4-second 16-step monophonic drum loop. Configurable parameters:
 
@@ -205,13 +204,8 @@ python transcribe.py out/house.wav \
     --output out/house_onsets.json
 ```
 
----
 
-## Notes
 
-- This release is anonymized for double-blind review and contains no author or
-  institution names.
-- The drum machine is a 3-class (Bass Drum, Snare Drum and Hi-Hats) 16-step monophonic sequencer with configurable a global tempo, per-instrument swing percentages.
 
 ---
 ## Supplementary_Materials
