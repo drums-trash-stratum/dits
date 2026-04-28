@@ -25,7 +25,7 @@ DITS/
     └── config_swung_breakbeat.json
 ```
 
-For the CRNN model implementation, we adapted the architecture and code from [`adtof_pytorch`](https://github.com/xavriley/ADTOF-pytorch), which is a Pytorch-based re-implementation of [ADTOF](https://github.com/mzehren/adtof).
+For the CRNN model implementation, we adapted the architecture and code from [`ADTOF_pytorch`](https://github.com/xavriley/ADTOF-pytorch), which is a Pytorch-based re-implementation of [ADTOF](https://github.com/mzehren/adtof).
 
 ---
 
