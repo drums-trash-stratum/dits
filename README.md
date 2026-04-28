@@ -1,6 +1,6 @@
-# DITS — Drum In the Trash Stratum
+# DITS — Drum In the Trash Stratum 
 
-Anonymous code release accompanying the ISMIR submission. Contains two tools:
+Anonymous code release accompanying the ISMIR submission, including both DITS data synthesis and DITS model inference implementation.
 
 1. **`transcribe.py`** — runs a pre-trained CRNN model (trained on the DITS dataset) on a drum audio file and returns Bass Drum (BD) / Snare Drum (SD) / Hi-Hats (HH) onset times.
 2. **`render_loop.py`** — synthesizes a 16-step drum loop including Bass Drum, Snare Drum and Hihats, from configurable
