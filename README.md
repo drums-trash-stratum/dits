@@ -1,4 +1,4 @@
-# DITS — Drum Inference and Templated Synthesis
+# DITS — Drum In the Trash Stratum
 
 Anonymous code release accompanying the ISMIR submission. Contains two
 self-contained tools:
