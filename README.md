@@ -1,4 +1,4 @@
-# DITS — Drums In the Trash Stratum 
+# DITS — Drums In the Trash Stratum 🕳️
 
 Anonymous code release accompanying the ISMIR submission, including both DITS data synthesis and DITS model inference implementation.
 
