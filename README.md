@@ -239,11 +239,10 @@ Compression - Limiter
 
 Global parameters for compression:
 ```
-
 {
  "threshold_db": -12, "ratio": 2,
  "attack_ms": 30, "release_ms": 200,
-        }
+}
 ```
 
 Global parameters for limiter:
